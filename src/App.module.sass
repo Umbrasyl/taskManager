@@ -1,0 +1,42 @@
+.app
+  padding: 2rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 2rem
+
+ul, ol
+  list-style: none
+
+*
+  text-align: center
+  padding: 0
+  margin: 0
+  font-family: sans-serif
+
+$searchBg: #eeeeee
+$searchBorderRadius: 0.3rem
+
+.form
+  border-radius: $searchBorderRadius
+  background-color: $searchBg
+  display: flex
+  justify-content: center
+  width: min-content
+  box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25)
+  input
+    border-radius: $searchBorderRadius 0 0 $searchBorderRadius
+    background-color: $searchBg
+    border: none
+    font-size: 1.4rem
+    padding: 0.2rem
+    margin-right: 0.1rem
+  button
+    border-radius: 0 $searchBorderRadius $searchBorderRadius 0
+    border: none
+    background-color: $searchBg
+    font-size: 1.4rem
+    padding: 0.2rem
+    cursor: pointer
+    &:hover
+      filter: brightness(1.1)
